@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&display=swap');
+
+/****************
+ Global Settings
+*****************/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #e0e0e0;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/***********
+ Typography
+************/
+
+h1 {
+  text-decoration: underline;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+/***********
+ Layout
+************/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+header {
+  height: auto;
+  background: #57886c;
+}
+
+nav,
+main {
+  width: 70vw;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+main {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+}
+
+.drawing-board {
+  width: 500px;
+  height: 500px;
+  display: flex;
+  background: white;
+  box-shadow: 1px 1px 6px 0.5px black;
+}
+
+.tools {
+  display: grid;
+  justify-items: center;
+}
+.colors {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 0.5rem;
+  margin-bottom: 1.5rem;
+  justify-items: center;
+}
+
+.color {
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 0.5px solid black;
+  box-shadow: 0.5px 0.5px 1px 0.5px #353535;
+}
+
+.color:hover {
+  box-shadow: 0.5px 0.5px 3px 0.5px #353535;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+button {
+  display: block;
+  height: 2rem;
+  width: 6.5rem;
+  background: #ca907e;
+  outline: none;
+  border: none;
+  color: black;
+  text-transform: capitalize;
+  font-weight: bold;
+  box-shadow: 0.5px 0.5px 1px 0.5px #353535;
+  border-radius: 3px;
+}
+
+button:hover {
+  background: #9f5741;
+  color: #ffffff;
+  box-shadow: 0.5px 0.5px 3px 0.5px #353535;
+}
